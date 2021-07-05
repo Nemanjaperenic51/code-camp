@@ -1,0 +1,187 @@
+:root {
+    --primary: rgb(2,190,216);
+    --secondary: rgb(43,51,61);
+    --textColor: rgb(30,51,61);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    line-height: 1.6;
+}
+/****************************************************************
+*****************************************************************
+*****************************************************************
+                            M A I N
+*****************************************************************
+*****************************************************************
+****************************************************************/
+ 
+
+main {
+    width: 80%;
+    background: rgb(255,255,255);
+    margin: 100px auto;
+}
+
+/****************************************************************
+*****************************************************************
+*****************************************************************
+                            H E A D E R
+*****************************************************************
+*****************************************************************
+****************************************************************/
+
+header {
+    background: url(../img/kamp1.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+header hgroup {
+    background: linear-gradient(45deg,rgba(30,51,61,.7),rgba(2,190,206,.7));
+     width: 70%;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px 20px;
+    color: #fff;
+}
+header h1 {
+    font-size: 3rem;
+}
+
+button ,
+input[type="submit"]{
+    border: 2px solid #fff;
+    background: transparent;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background: #fff;
+    color: #000;
+    transition: .6s ease;
+    cursor: pointer;
+}
+
+
+/****************************************************************
+*****************************************************************
+*****************************************************************
+                            N O V O S T I
+*****************************************************************
+*****************************************************************
+****************************************************************/
+
+.novosti {
+    background: var(--primary);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+
+.py {
+    padding: 70px 0;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.uvod {
+    text-align: center;
+
+}
+
+.uvod > h2 {
+    font-size: 3rem;
+    color: var(--primary);
+    text-shadow: 0 0 3px var(--textColor);
+}
+
+.odmor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.odmor article {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+.odmor article:first-child {
+    background: var(--primary);
+    color: #fff;
+}
+
+.odmor article:last-child {
+    background: url(../img/kamp5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.odmor article h2 {
+    color: #fff;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+/*prijava*/
+
+.prijava {
+    background: linear-gradient(45deg,rgba(30,51,61,.7),rgba(2,190,206,.7));
+    text-align: center;
+
+}
+
+.prijava h2 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+input[type="email"] {
+    width: 30%;
+    border: 2px solid #fff;
+    padding: 15px 5px;
+    border-radius: 7px;
+    font-size: 1rem;
+    background: transparent;
+}
+
+@media (max-width: 760px) {
+    main {
+        width: 90%;
+        margin: 30px auto;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    .odmor article {
+        flex: 0 0 100%;
+    }
+}
